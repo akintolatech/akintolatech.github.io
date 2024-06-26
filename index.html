@@ -7,6 +7,7 @@
     <title>Akintola Technologies</title>
     <meta name="author" content="Akintola Victor">
     <link type="text/css" href="styles/styles.css" rel="stylesheet" >
+    <script src="js/jquery.js"></script>
 </head>
 <body>
 
@@ -16,47 +17,35 @@
         <div class="header_wrap">
 
 
-
-            <div id="site-id">
+            <a href="index.html">
+            <div class="site-id">
                 <img src="img/lotuslogo-01.svg" alt="AkintolaTech Logo">
             </div>
+            </a>
+
 
             <div class="pry-nav">
                 <ul>
-                    <li><a href="pages/blog.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <!-- <li><a href="pages/blog.html">About</a></li> -->
                     <li><a href="pages/shop.html">Shop</a></li>
-                    <li><a href="pages/blog.html">Blog</a></li>
-                    
+                    <li><a href="pages/blog.html">Blog</a></li>   
                 </ul>
             </div>
 
             <!-- hamburger menu -->
-            <div id="ham" onclick="toggleanimate()">
+            <div class="site-id nav">
                 <!-- <img src="img/ham-nav-01.svg" alt="lotus navigation"> -->
+                <svg version="1.1"  x="0px" y="0px"
+                    viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                    
+                    <g>
+                    <!-- Add a class to each rect element to style and target them individually -->
+                    <rect x="4.6" y="10.5" class="st0 bar1" width="30.8" height="4"/>
+                    <rect x="4.6" y="18" class="st0 bar2" width="30.8" height="4"/>
+                    <rect x="4.6" y="25.5" class="st0 bar3" width="30.8" height="4"/>
+                    </g>
 
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 63.5 52.5" style="enable-background:new 0 0 63.5 52.5;" xml:space="preserve">
-
-
-
-                        <style type="text/css">
-                            .st0{fill:#3F0E40;}
-                            .st1{fill:#FBE6FF;}
-
-                            .st0:hover {
-                               fill:#FBE6FF;
-                            }
-                        </style>
-
-
-
-                        <path class="st0" d="M43.12,20.7H20.19c-0.45,0-0.81-0.36-0.81-0.81v-3.06c0-0.45,0.36-0.81,0.81-0.81h22.93
-                            c0.45,0,0.81,0.36,0.81,0.81v3.06C43.93,20.33,43.57,20.7,43.12,20.7z"/>
-                        <path class="st0" d="M43.31,28.59H20.38c-0.45,0-0.81-0.36-0.81-0.81v-3.06c0-0.45,0.36-0.81,0.81-0.81h22.93
-                            c0.45,0,0.81,0.36,0.81,0.81v3.06C44.12,28.23,43.76,28.59,43.31,28.59z"/>
-                        <path class="st0" d="M43.31,36.48H20.38c-0.45,0-0.81-0.36-0.81-0.81v-3.06c0-0.45,0.36-0.81,0.81-0.81h22.93
-                            c0.45,0,0.81,0.36,0.81,0.81v3.06C44.12,36.12,43.76,36.48,43.31,36.48z"/>
                 </svg>
 
             </div>
@@ -65,18 +54,18 @@
 
     </div>
 
-    <div class="padding" style="height: 70px;"></div>
+    <div class="padding"></div>
 
     <div id="main">
 
 
-        <div class="back-drop" onclick="toggleanimate()"></div>
+        <div class="back-drop"></div>
 
         <!-- LANDING PAGE -->
         <div class="landing">
 
             <div class="landing-text">
-                <h1>Simple Digital Services just for your Brand</h1>
+                <h1>Web and Mobile Apps for your Brand!</h1>
 
                 <p>At Akintola Technologies we are driven by research to gear the human society towards technological advancement</p>
                 <button style="width: 200px;"><a href="/pages/blog.html">Connect</a></button>
@@ -100,9 +89,6 @@
         </div>
 
         <div class="service-box">
-
-
-
 
             <div class="service">
 
@@ -288,79 +274,46 @@
 
         </div>
 
+        
+        <!-- LANDING PAGE -->
+        <div class="landing">
 
-        <!-- <div class="foot-header">
-             <div id="site-id">
-                <img src="img/lotus-studios-light-02.svg" alt="lotus studios">
+            <div class="landing-text">
+
+                <h1>Digital Skills Training</h1>
+
+                <p>Learn Digital skills for self reliance, employment, and innovation!</p>
+                <h4>Our Courses</h4>
+
+                <ul class="section-list">
+
+                    <li>Mobile App Development</li>
+                    <li>Desktop App Development</li>
+                    <li>Web Development</li>
+                    <li>Visual or UI/UX Design</li>
+                    
+                </ul>
+
+                <button style="width: 200px;"><a href="/pages/blog.html">Connect</a></button>
+
             </div>
-            
-        </div> -->
 
-        <!-- footer -->
+            <div class="landing-art">
+                <img src="img/dashlnd.gif" alt="lotus navigation">
+                <!-- <video src="img/lndvid.webm" autoplay loop></video> -->
+            </div>
 
-        
-        
-
-
-
+        </div>
+        <!-- MAIN ENDS HERE -->
     </div>
-
-
-    <!-- footer -->
-    <!-- <div class="footer-container">
-        <div class="service-box footer">
-
-        <div class="service footer">
-            <ul>
-                <li>Links</li>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blogs</li>
-                <li>Store</li>
-                
-            </ul>
-        </div>
-
-
-
-        <div class="service footer">
-            <ul>
-                <li>Our Network</li>
-                <li>Join us</li>
-                <li>Our Idealogies</li>
-                <li>Lotus Chats</li>
-                <li>Terms and Conditions</li>
-
-        
-                
-            </ul>
-        </div>
-
-        <div class="service footer">
-            <ul>
-                <li>Be Social</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Github</li>
-                <li>Whatsapp Chat</li>
-                
-            </ul>
-        </div>
-
-
-
-        </div>
-    </div> -->
-
 
 
 
     <div class="foot-header">
-                <div id="foot-id">
-                    <img src="img/lotus-studios-light-02.svg" alt="lotus studios">
-                </div>
-                <p>Designed and Developed by Akintola Technologies | All rights reserved &copy <span class="year">202 </span> </p>
-            
+        <div id="foot-id">
+            <img src="img/lotus-studios-light-02.svg" alt="lotus studios">
+        </div>
+        <p>Designed and Developed by Akintola Technologies | All rights reserved &copy <span class="year">202 </span> </p>     
      </div>
 
 

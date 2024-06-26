@@ -1,27 +1,23 @@
-function toggleanimate() {
+$(document).ready(
+    function(){
 
-  let nav = document.querySelector(".pry-nav");
-  let backdrop = document.querySelector(".back-drop");
+        
 
-  // Ham Nav Animation
-  if (nav.className === "pry-nav") {
-    
-    nav.className += " open";
-    backdrop.style.display = "block";
-    
-  } else {
-    nav.className = "pry-nav";
-    backdrop.style.display = "none";
-  }
+        $('.nav').click(
+            function(){
+                $('.pry-nav').toggleClass('open');
 
-  console.log("function activated");
-  
-
-//   console.log("hi");
-}
+                // ham nav animation
+                $('.bar1').toggleClass('active');
+                $('.bar2').toggleClass('active');
+                $('.bar3').toggleClass('active');
+                $('.back-drop').show();
+            }
+        )
+    }
+)
 
 // reset backdrop
-
 let screenWidth = window.innerWidth
 
 // if (screenWidth <= 760) {

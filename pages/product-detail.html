@@ -97,18 +97,16 @@
         <div class="landing">
 
             <div class="landing-art">
-                <img src="../img/prod/pf.jpg" alt="lotus navigation">
+                <img id="prod-img" src="../img/prod/pf.jpg" alt="lotus navigation">
             </div>
 
             <div class="landing-text">
-                <h1>Web Portfolio</h1>
-
-                <p>At Akintola Technologies we are driven by research to gear the human society towards technological advancement</p>
+                
+                <h1 id="prod-title">Web Portfolio</h1>
+                <p id="prod-desc"></p>
                 <button style="width: 200px;"><a href="/pages/blog.html">Request Quote</a></button>
 
             </div>
-
-
 
         </div>
 
@@ -136,6 +134,25 @@
     let year = new Date().getFullYear();
     let placeholder = document.querySelector('.year');
     placeholder.textContent = year.toString();
+
+    // get item id from the usrl parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    itemId = urlParams.get('item');
+
+    const productDetails = {
+        1:{title:'Web Portfolio', desc:"The Web Porfolio", img:"../img/prod/pf.jpg" },
+        2:{title:'CBT', desc:"Computer Based Testing App", img:"../img/prod/rwa.jpg"}
+    };
+
+    if (itemId && productDetails[itemId]){
+        document.getElementById("prod-title").textContent = productDetails[itemId].title;
+        document.getElementById("prod-desc").textContent = productDetails[itemId].desc;
+        document.getElementById("prod-img").src = productDetails[itemId].img;
+    }else{
+        document.getElementById("prod-title").textContent = "Invalid Product";
+        document.getElementById("prod-desc").textContent = "There is no such Product here!";
+        document.getElementById("prod-img").src = "../img/aisha.jpg";
+    }
 
   </script>
 

@@ -21,9 +21,11 @@
 
 
 
-            <div id="site-id">
-                <img src="../img/lotuslogo-01.svg" alt="lotus studios">
+            <a href="../index.html">
+            <div class="site-id">
+                <img src="../img/lotuslogo-01.svg" alt="AkintolaTech Logo">
             </div>
+            </a>
 
             <div class="pry-nav">
                 <ul>
@@ -131,7 +133,7 @@
         <!-- products -->
         <div class="section">
 
-            <h1>Projects</h1>
+            <h1>Store</h1>
             <!-- <p>Connections</p> -->
 
         </div>
@@ -139,30 +141,32 @@
         <div class="service-box">
 
             <!-- product boxes -->
-
-
-        
-            <div class="service product" onclick="window.location.href='product-detail.html'">
+            <a href="product-detail.html?item=1" class="service product">
+            <div>
                 <div class="product-img">
                     <img src="../img/prod/pf.jpg" alt="design" />
                 </div>
-                <p>Web Portfolio</p>
+                <p>Web Portfolio Free</p>
             </div>
+            </a>
 
-            <div class="service product" onclick="window.location.href='projects/aisha/index.html'">
+            <a href="product-detail.html?item=2" class="service product">
+            <div>
                 <div class="product-img">
                     <img src="../img/prod/rwa ui-01.jpg" alt="design" />
                 </div>
-                <p>RWA</p>
+                <p>Real Estate Website - $150</p>
             </div>
+            </a>
 
-            <div class="service product" onclick="window.location.href='projects/aisha/index.html'">
+            <a href="product-detail.html?item=3" class="service product">
+            <div>
                 <div class="product-img">
                     <img src="../img/prod/ecom.jpg" alt="design" />
                 </div>
-                <p>E-Commerce Template</p>
+                <p>E-Catalog - $500</p>
             </div>
-            
+            </a>
 
 
         </div>
@@ -190,6 +194,14 @@
     let year = new Date().getFullYear();
     let placeholder = document.querySelector('.year');
     placeholder.textContent = year.toString();
+
+    document.querySelectorAll(".service-box a").forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = item.href;
+        });
+    }
+    );
 
   </script>
 

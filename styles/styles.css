@@ -12,9 +12,13 @@ html, body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: var(--pry-color);
+}
+
 
 #header {
-    
     /* border: 1px solid rebeccapurple; */
     width: 100%;
     height: 70px;
@@ -25,7 +29,8 @@ html, body {
    top: 0px;
    left: 0px;
    background-color: var(--white);
-   /* display: flex; */
+   display: flex;
+   align-items: center;
    z-index: 3;
 }
 
@@ -41,10 +46,42 @@ html, body {
 }
 
 .header_wrap a {
+    height: 100%;
     text-decoration: none;
     color: #3f0e40;
 }
 
+#ham {
+    width: 40px;
+}
+
+/* SVG Styling */
+.st0{
+    fill: var(--pry-color);
+    /* transform: rotate(45deg); */
+}
+
+
+/* Ham Nav Animation */
+.bar1.active {
+  transform: translateY(0.3rem) rotate(45deg);
+  transform-origin: 50% 50%;
+  
+}
+.bar2.active {
+  opacity: 0;
+}
+.bar3.active {
+  transform: translateY(-0.4rem) rotate(-45deg);
+  transform-origin: 50% 50%;
+}
+
+
+
+.padding {
+    height: 70px;
+    margin-bottom: 24px;
+}
 
 .back-drop {
     position: fixed;
@@ -89,7 +126,7 @@ html, body {
 
 
 
-#site-id {
+.site-id {
     width: 40px;
     height: 40px;
     /* border: 1px solid rebeccapurple; */
@@ -97,8 +134,15 @@ html, body {
     /* margin: 10px; */
     float: left;
     cursor: pointer;
+    /* background-image: url("../img/lotuslogo-dark-01-01.svg"); */
+    /* background-image: url("../img/lotuslogo-01.svg"); */
+    /* transition: all 1000ms ease; */
+}
+
+.site-id:hover {
     /* background-image: url("../img/lotuslogo-01.svg"); */
 }
+
 
 #site-id img {
     width: 100%;
@@ -159,10 +203,11 @@ html, body {
        
         height: 80vh;
         position: absolute;
-        top: 100px;
-        left: 36%;
+        top: 76px;
+        left: 10%;
         background-color: white;
-        /* border: 1px solid #3f0e40; */
+        border: 1px solid #3f0e40;
+        padding: 10px;
         /* display: block; */
         /* margin: 0; */
     }
@@ -175,6 +220,9 @@ html, body {
 
     .pry-nav ul li {
         /* margin: 20px 0; */
+        /* height: 40px; */
+        /* border: 1px solid #3f0e40; */
+        padding: 20px;
     }
     
     #ham {
@@ -202,7 +250,6 @@ html, body {
     justify-content: space-between;
 }
 
-
 .landing-text {
     width: 49%;
     padding: 1%;
@@ -211,9 +258,11 @@ html, body {
 }
 
 .landing-art {
-    /* background-color: #d99ce5; */
+    background-color: #da5fea18;
+    /* background: linear-gradient( 45deg, #da5fea, #c655f7); */
     width: 49%;
     height: 460px;
+    border-radius: 30px;
 }
 
 .landing-art img {
@@ -228,7 +277,19 @@ html, body {
     border-radius: 30px;
 }
 
+.section-list {
+    /* border: 1px solid red; */
+    list-style-type: ethiopic-numeric;
+}
 
+.section-list li {
+    /* height: 20px; */
+    padding: .3em 0 1em 40px;
+    margin: 16px 0;
+    /* list-style-type: img; */
+    /* list-style-image: url("../img/bullet.svg"); */
+    background: url("../img/bullet.svg") no-repeat;
+}
 
 
 
@@ -257,7 +318,8 @@ html, body {
 button {
     width: 100%;
     height: 44px;
-    background-color: #3f0e40;
+    /* background-color: #3f0e40; */
+    background: linear-gradient( 45deg, #da5fea, #c655f7);
     color: #fbe6ff;
     border-radius: 5px;
     border: none;
@@ -322,11 +384,10 @@ button a {
 
 }
 
-/* .service:hover {
-    transform: scale(1.04);
-    transition-duration: 200ms;
-    transition-timing-function: ease-in-out;
-} */
+.service:hover.service>h2 {
+    color: #c655f7;
+    transition: all ease 200ms;
+}
 
 .service.blog {
     text-align: left;
@@ -468,17 +529,11 @@ button a {
 
 
 
-
-
-
-
-
-
-
 /* FOOTER */
 .footer-container {
     width: 100%;
     background-color: var(--pry-color);
+    /* background: linear-gradient( 45deg, #da5fea, #c655f7); */
 }
 .footer {
     background-color: var(--pry-color);
@@ -489,7 +544,8 @@ button a {
 
 .foot-header {
     /* height: 70px; */
-    background-color: #3f0e40;
+    /* background-color: #3f0e40; */
+    background: linear-gradient( 45deg, #da5fea, #c655f7);
     color: #fbe6ff;
     /* margin-top: 30px; */
     padding: 20px;
