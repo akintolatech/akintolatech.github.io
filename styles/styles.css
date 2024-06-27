@@ -90,8 +90,8 @@ html, body {
 
 
 #site-id {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     /* border: 1px solid rebeccapurple; */
     /* margin: 1.2%; */
     /* margin: 10px; */
@@ -157,14 +157,12 @@ html, body {
     
     .pry-nav {
        
-        height: 80vh;
+        height: 100vh;
         position: absolute;
         top: 100px;
-        left: 36%;
+        left: 7%;
         background-color: white;
         /* border: 1px solid #3f0e40; */
-        /* display: block; */
-        /* margin: 0; */
     }
 
     .pry-nav ul {
@@ -175,6 +173,7 @@ html, body {
 
     .pry-nav ul li {
         /* margin: 20px 0; */
+        padding: 20px;
     }
     
     #ham {
@@ -258,6 +257,7 @@ button {
     width: 100%;
     height: 44px;
     background-color: #3f0e40;
+    background: linear-gradient(45deg, #da5fea, #c655f7);
     color: #fbe6ff;
     border-radius: 5px;
     border: none;
