@@ -34,8 +34,8 @@ body {
 }
 
 @font-face {
-  font-family: "Oswald";
-  src: url("../media/Oswald-Regular.ttf") format("truetype");
+  font-family: "Cera Round Pro DEMO";
+  src: url("../media/CeraRoundProDEMO-Regular.otf") format("truetype");
 }
 
 :root {
