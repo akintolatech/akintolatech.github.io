@@ -138,16 +138,28 @@ html, body {
     text-align: left;
 }
 
-
-/* hamburger menu */
-#ham {
-    width: 80px;
-    height: 100%;
-    float: right;
-    /* border: 1px solid red; */
-    /* display: none; */
-    cursor: pointer;
+/* SVG Styling */
+.st0{
+    fill:#c740ec;
+    /* transform: rotate(45deg); */
 }
+
+
+/* Ham Nav Animation */
+.bar1.active {
+  transform: translateY(0.3rem) rotate(45deg);
+  transform-origin: 50% 50%;
+  
+}
+.bar2.active {
+  opacity: 0;
+}
+
+.bar3.active {
+  transform: translateY(-0.4rem) rotate(-45deg);
+  transform-origin: 50% 50%;
+}
+
 
 
 /* for small screens */
