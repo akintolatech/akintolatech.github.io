@@ -60,6 +60,9 @@ html, body {
 	backdrop-filter: blur(10px)
 }
 
+.back-drop.bk-active {
+  display: block;
+}
 
 #main {
     width: 95%;

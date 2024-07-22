@@ -11,7 +11,8 @@ $(document).ready(
                 $('.bar1').toggleClass('active');
                 $('.bar2').toggleClass('active');
                 $('.bar3').toggleClass('active');
-                $('.back-drop').show();
+                
+                $('.back-drop').toggleClass('bk-active');
             }
             
         )
