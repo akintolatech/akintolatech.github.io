@@ -92,9 +92,7 @@ html, body {
     width: 44px;
     height: 44px;
     /* border: 1px solid rebeccapurple; */
-    /* margin: 1.2%; */
-    /* margin: 10px; */
-    float: left;
+    /* float: left; */
     cursor: pointer;
     /* background-image: url("../img/lotuslogo-01.svg"); */
 }
@@ -102,11 +100,6 @@ html, body {
 #site-id img {
     width: 100%;
 }
-
-#site-id:hover {
-    transform: rotateZ(45deg);
-}
-
 
 .pry-nav  {
     width: 463px;
@@ -140,12 +133,25 @@ html, body {
 }
 
 
+
+
 /* SVG Styling */
+.nav {
+    width: 44px;
+    height: 44px;
+    /* border: 1px solid rebeccapurple; */
+    cursor: pointer;
+    /* background-image: url("../img/lotuslogo-01.svg"); */
+}
+
+.nav img {
+    width: 100%;
+}
+
 .st0{
     fill:#c740ec;
     /* transform: rotate(45deg); */
 }
-
 
 /* Ham Nav Animation */
 .bar1.active {
@@ -187,19 +193,20 @@ html, body {
         /* margin: 20px 0; */
         padding: 20px;
     }
-    
-    #ham {
-        display: flex;
-    }
 
 }
 
 /* for large screens */
 @media screen and (min-width: 760px) {
+    .nav, .back-drop {
+        display: none;
+    }
     
     .pry-nav {
        display: block;
     }
+
+
 
 }
 
