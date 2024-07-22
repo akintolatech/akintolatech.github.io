@@ -223,6 +223,7 @@ html, body {
     /* height: 460px; */
     /* border: 1px solid rebeccapurple; */
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -261,6 +262,10 @@ html, body {
     .landing {
         flex-direction: column-reverse;
         margin: auto;
+    }
+
+    .product {
+        flex-direction: column;
     }
 
     .landing-art {

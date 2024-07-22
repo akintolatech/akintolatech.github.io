@@ -1,10 +1,15 @@
 
-let productText = document.querySelector(".product-text");
-let productImg = document.querySelector(".productimg");
 
 
-window.localStorage.setItem("text", productText.textContent);
-window.localStorage.setItem("image", productImg.src);
+function assignId (id) {
+    window.localStorage.clear();
+    window.sessionStorage.clear();
+    window.sessionStorage.setItem("id", id);
+    // alert("commited");
+    window.location.href='product-detail.html';
+}
 
-console.log(productImg.src);
 
+
+
+// console.log(window.localStorage.getItem("id"));
