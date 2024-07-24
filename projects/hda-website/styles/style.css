@@ -17,7 +17,7 @@ a {
 }
 
 :root {
-    --pry-color: #50367F;
+    --pry-color: #396649;
     --dark: rgb(41, 29, 52);
     --radius: 10px;
 }
@@ -217,7 +217,7 @@ button {
     cursor: pointer;
     border-radius: 30px;
     color: white;
-    background-color: var(--dark);
+    background-color: var(--pry-color);
 }
 
 /* for large screens */
@@ -329,7 +329,7 @@ button {
    width: 30px;
    height: 5px;
    border-radius: 30px;
-   background: #50367F;
+   background-color: var(--pry-color);
    display: block;
 }
 
