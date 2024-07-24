@@ -18,7 +18,8 @@ a {
 
 :root {
     --pry-color: #396649;
-    --dark: rgb(41, 29, 52);
+    --light: #daf8e5;
+    --dark: #0e3b2a;
     --radius: 10px;
 }
 
@@ -184,10 +185,14 @@ a {
     /* border: 1px solid red; */
     margin: auto;
     overflow: hidden;
-    background-image: url("../img/landing.jpg");
+    background-image: url("../img/landing.png");
     background-size: cover;
     background-repeat: no-repeat;
    
+}
+
+.lnd-home {
+    height:510px;
 }
 
 @media screen and (min-width:1400px) {
@@ -202,22 +207,24 @@ a {
 } */
 
 .text {
+    
     margin: 20px;
     margin-top: 150px;
     color: rgb(248, 248, 248);
+    line-height: 1.5rem;
     transition: all 0.2s cubic-bezier(0.77,0.2,0.05,1.0);
 
 }
 
 button {
-    width: 300px;
-    height: 44px;
+    width: 220px;
+    height: 54px;
     font-weight: bolder;
-    border: none;
+    border: 2px solid var(--pry-color);
     cursor: pointer;
     border-radius: 30px;
-    color: white;
-    background-color: var(--pry-color);
+    color: var(--dark);
+    background-color: var(--light);
 }
 
 /* for large screens */
@@ -236,8 +243,10 @@ button {
     }
 
     .text {
+        width: 50%;
         margin: 50px;
         margin-top: 150px;
+        
     }
 }
 
@@ -276,6 +285,7 @@ button {
     /* width: 49%; */
     /* border: 1px solid red; */
     /* padding: 1%; */
+    margin-bottom: 30px;
     
     background-color: whitesmoke;
 }
