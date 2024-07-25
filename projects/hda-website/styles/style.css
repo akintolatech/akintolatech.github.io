@@ -152,7 +152,7 @@ a {
 
 /* SVG Styling */
 .st0{
-    fill:#50367F;
+    fill:var(--pry-color);
     /* transform: rotate(45deg); */
 }
 
@@ -171,9 +171,6 @@ a {
   transform: translateY(-0.4rem) rotate(-45deg);
   transform-origin: 50% 50%;
 }
-
-
-
 
 
 
