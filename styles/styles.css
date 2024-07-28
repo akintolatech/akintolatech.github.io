@@ -6,11 +6,18 @@
 }
 
 html, body {
-    font-family: Futura Bk BT;
+    font-family: Futura Bk BT Book;
+    /* font-family: Cera Round Pro DEMO; */
     background-color: var(--light-bg-color);
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+  font-family: "Futura Bk BT Book";
+  src: url("../media/Futura Bk BT Book.ttf") format("truetype");
+}
+
 
 
 #header {
