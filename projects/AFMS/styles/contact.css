@@ -18,7 +18,7 @@
 .contact-box {
     width: 80%;
     height: fit-content;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin: auto;
     padding: 30px;
     margin-top: -50px;
@@ -27,9 +27,11 @@
     background-color: rgb(252, 252, 252);
     box-shadow: 0.5px 0.5px 1px #ddd9d9, 
               -0.5px -0.5px 1px #ddd9d9;
+    border-radius: 24px;
     z-index: 1;
 }
 
+/* for larger screens */
 @media screen and (max-width: 480px) {
    .contact-box{
        width: 90%;
@@ -40,7 +42,8 @@
 .details {
     width: 49%;
     height: 400px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
+    box-sizing: border-box;
     /* background-color: rgb(252, 252, 252); */
 }
 
@@ -49,6 +52,7 @@
     font-weight: bold;
 }
 
+/* for smaller screens */
 @media screen and (max-width: 760px) {
     .contact-box {
         flex-direction: column;
@@ -56,6 +60,11 @@
 
     .details {
         width: 100%;
+
+    }
+
+    .detail-top {
+        margin-bottom: 24px;
     }
 }
 
@@ -71,8 +80,8 @@
 }
 
 .contact-pad {
-    width: 190px;
-    height: 150px;
+    /* width: 190px; */
+    /* height: 150px; */
     /* border: 1px solid red;   */
 }
 
