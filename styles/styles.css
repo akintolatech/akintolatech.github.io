@@ -376,6 +376,10 @@ button a {
     margin-top: 0px;
 }
 
+.blog img {
+    width: 100%;
+}
+
 .product {
     text-align: left;
     /* box-sizing: border-box; */
