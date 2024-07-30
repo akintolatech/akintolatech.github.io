@@ -10,8 +10,8 @@
     <link type="text/css" href="../styles/store.css" rel="stylesheet" >
     <link type="x-icon" href="../img/lotus.ico" rel="icon" />
     <script src="../js/jquery.js"></script>
-    <script src="../js/toggle.js"></script>
-    
+    <script language="javascript" src="../js/toggle.js"></script>
+    <script language="javascript" src="../js/year.js"></script>
 </head>
 <body>
     
@@ -21,18 +21,18 @@
         <div class="header_wrap">
 
             <div id="site-id">
-                <img src="../img/lotuslogo-01.svg" alt="lotus studios">
+                <img src="../img/lotuslogo-01.svg" alt="AkintolaTech Logo">
             </div>
 
             <div class="pry-nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
+                    <!-- <li><a href="pages/blog.html">About</a></li> -->
+                    <li><a href="pages/shop.html">Shop</a></li>
                     <li><a href="blog.html">Blog</a></li>
+                    
                 </ul>
             </div>
-
-            
 
             <div class="nav">
 
@@ -81,20 +81,11 @@
         <div id="foot-id">
             <img src="../img/lotus-studios-light-02.svg" alt="AkintolaTech logo">
         </div>
-        <p>Designed and Developed by Akintola Technologies | All rights reserved &copy <span class="year">202 </span> </p>
+        <p>Designed and Developed by Akintola Technologies | All rights reserved &copy <b class="year">202 </b> </p>
     </div>
 
 </body>
 
-    <script language="javascript" src="../js/toggle.js"></script>
     <script src="../js/loadproduct.js"></script>
-
-  <script>
-
-    let year = new Date().getFullYear();
-    let placeholder = document.querySelector('.year');
-    placeholder.textContent = year.toString();
-
-  </script>
 
 </html>
