@@ -281,6 +281,7 @@ html, body {
     .landing-art {
         /* display: none; */
         width: 100%;
+        height: fit-content;
     }
     
    .landing-text {
