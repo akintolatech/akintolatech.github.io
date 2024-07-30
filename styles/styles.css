@@ -370,6 +370,7 @@ button a {
 .service.blog {
     text-align: left;
     height: auto;
+    cursor: pointer;
 }
 
 .service.blog  button{
@@ -528,12 +529,6 @@ button a {
 
 
 
-
-
-
-
-
-
 /* FOOTER */
 .footer-container {
     width: 100%;
@@ -580,17 +575,6 @@ button a {
     text-align: center;
     margin-top: 25px;
 
-}
-
-
-/* blog page styles */
-.blog-lnd {
-    height: 200px;
-}
-
-.blog-lnd img {
-    width: 100%;
-    height: 100%;
 }
 
 

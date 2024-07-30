@@ -11,7 +11,7 @@ let productImageLink = "../img/prod/pf.jpg"
 let productText = "Web Portfolio";
 let productDesc = "Simple web porfolio for freelancers";
 let productPrice = "$50";
-let productLink = "dhjcjdhcjhdjh"
+let productLink = "https://buymeacoffee.com/akintolate6/e/200275"
 
 let productImageLink2 = "../img/prod/auth.jpg"
 let productText2 = "Authentication pages";
