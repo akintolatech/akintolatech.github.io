@@ -7,17 +7,17 @@
 // };
 
 // Web portfolio details
-let productImageLink = "../img/prod/pf.jpg"
+let productImageLink = "../img/prod/pf.jpg";
 let productText = "Web Portfolio";
 let productDesc = "Simple web porfolio for freelancers";
 let productPrice = "$50";
-let productLink = "https://buymeacoffee.com/akintolate6/e/200275"
+let productLink = "https://buymeacoffee.com/akintolate6/e/200275";
 
-let productImageLink2 = "../img/prod/auth.jpg"
+let productImageLink2 = "../img/prod/auth.jpg";
 let productText2 = "Authentication pages";
 let productDesc2 = "Simple authentication pages that implements login, register and dashboard functionality";
 let productPrice2 = "$20";
-let productLink2 = "dhjcjdhcjhdjh"
+let productLink2 = "dhjcjdhcjhdjh";
 
 // Product dataset
 let products = {
