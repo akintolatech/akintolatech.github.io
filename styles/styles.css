@@ -166,6 +166,7 @@ html, body {
 .bar1.active {
   transform: translateY(0.3rem) rotate(45deg);
   transform-origin: 50% 50%;
+  transition: all 200ms ease;
   
 }
 .bar2.active {
