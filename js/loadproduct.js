@@ -1,10 +1,3 @@
-// window.onload = function () {
-     
-//     let ProductId = window.localStorage.getItem(id);
-//     let productObject = products[ProductId];
-//     return productObject;
-
-// };
 
 // Web portfolio details
 let productImageLink = "../img/prod/pf.jpg";
@@ -29,6 +22,7 @@ let products = {
 let ProductId = window.sessionStorage.getItem("id");
 let productObject = products[ProductId];
 
+// data containers
 let productImgElement = document.querySelector(".product-img");
 let productTitleElement = document.querySelector(".product-title");
 let productDescElement = document.querySelector(".product-desc");
