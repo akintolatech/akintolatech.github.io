@@ -11,6 +11,7 @@
     
     <script src="../js/jquery.js"></script>
     <script src="../js/toggle.js"></script>
+    <script language="javascript" src="../js/blog/assignBlog.js"></script>
 </head>
 <body>
 
@@ -75,21 +76,23 @@
 
         <div class="service-box">
 
-            <div class="service blog">
-                <img src="../img/type.jpg" alt=""/>
-                <h2>Thinking with Typography</h2>
-                <p>The Organization of letters on a blank page is the designers basic challenge ... </p>
+          
+            <div class="service blog" onclick="assignBlogId(1)">
+                <img src="../img/dj.jpg" alt=""/>
+                <h2>Django ORM</h2>
+                <p>The Django object-relational mapper (ORM) is a powerful database abstraction API.. </p>
                 <!-- <button>Read Paper</button> -->
             </div>
+          
 
-             <div class="service blog">
-                <img src="../img/web.jpg" alt=""/>
+             <div class="service blog" onclick="assignBlogId(2)">
+                <img src="../img/fr.jpg" alt=""/>
                 <h2>Deepface</h2>
-                <p>a step by step guide in learning web development ... </p>
+                <p>DeepFace AI is the most lightweight face recognition library .. </p>
                 <!-- <button>Read Paper</button> -->
             </div>
 
-             <div class="service blog">
+             <div class="service blog" onclick="assignBlogId(3)">
                 <img src="../img/gee.jpg" alt=""/>
                 <h2>Applications of GEE</h2>
                 <p>GEE is a cloud computing platform used for planetary scale analysis ... </p>

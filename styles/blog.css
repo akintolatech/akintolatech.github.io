@@ -1,0 +1,13 @@
+.blog-text {
+    width: 60%;
+    text-align: justify;
+    line-height: 1.5rem;
+    margin: auto;
+}
+
+@media  screen and (max-width: 760px) {
+    .blog-text {
+        width: 96%;
+
+    }
+}
