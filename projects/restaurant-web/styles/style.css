@@ -288,6 +288,14 @@ button {
     box-sizing: border-box;
 }
 
+.value_imgbox {
+    width: 60px;
+}
+
+.value_imgbox img {
+    width: 100%;
+}
+
 /* for large screens */
 @media screen and (min-width: 760px){
     .values_container {
