@@ -274,12 +274,29 @@ button {
 /* Values ===> */
 .values_item {
     border-radius: var(--radius);
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 12px 0px;
     background-color: white;
     padding: 20px;
     box-sizing: border-box;
 }
+
+/* for large screens */
+@media screen and (min-width: 760px){
+    .values_container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .values_item {
+        width: 32%;
+    }
+}
+
+
+
 
 .narrative {
     width: 100%;
@@ -393,7 +410,7 @@ button {
     /* border: 1px solid red; */
     /* background-image: url("../img/amp.jpg"); */
     /* background-repeat: no-repeat; */
-    
+    color: white;
     padding: 0;
 }
 
@@ -403,9 +420,15 @@ button {
     border-radius: var(--radius);  
 }
 
-.project2 h3 {
-    margin-top: -60px;
-    margin-left: 20px;
+.product-item-content {
+    margin-top: -400px;
+    /* margin-left: 20px; */
+    padding: 30px;
+}
+
+.product-item-content button {
+    width: 120px;
+    height: 44px;
 }
 
 
