@@ -54,10 +54,12 @@ a {
 
 .site-id {
     width: 40px;
+    height: 40px;
 }
 
 .site-id img {
     width: 100%;
+    height: 100%;
     cursor: pointer;
 }
 
@@ -266,6 +268,18 @@ button {
     }
 }
 
+
+/* Progessive enhancement */
+
+/* Values ===> */
+.values_item {
+    border-radius: var(--radius);
+    border: 1px solid red;
+    margin: 12px 0px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
 .narrative {
     width: 100%;
