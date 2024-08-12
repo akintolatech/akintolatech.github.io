@@ -1,0 +1,157 @@
+/* foodbox styles */
+ /* food box */
+.menu-food-box {
+  /* height: 290px; */
+  /* width: 190px; */
+  /* border: 1px solid #fb1f4c; */
+     box-shadow:  0.5px 0.5px 2px #ddd9d9, 
+               -0.5px -0.5px 2px #ddd9d9;
+      width: 235px;
+     height: 288px;
+     margin: 1%;
+     padding: 12px;
+     /* ref-> */
+     /* display: inline-block; */
+     float: left;
+}
+
+
+ /* refactor for responsiveness */
+ @media screen and (max-width: 760px) {
+     .menu-food-box {
+         /* width: 43.95%; */
+         /* float: none; */
+     }
+ }
+
+.menu-food-image {
+  width: 100%;
+  height: 195px;
+  /* border: 1px solid red; */
+  /* margin: auto; */
+}
+
+.menu-food-image img {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+  /* margin: auto; */
+}
+
+/* food meta */
+.menu-food-meta {
+  /* width: 180px; */
+  height: 40px;
+  /* border: 1px solid red;  */
+  margin: auto;
+  margin-top: 5px;
+}
+
+.menu-name-price {
+ /* width: 75px; */
+ /* border: 1px solid red;  */
+ float: left;
+}
+
+.menu-name-price p, .menu-name-price h4 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu-name-price p {
+ font-size: 10px;
+ color: #fb1f4c;
+ margin-top: 8px;
+}
+
+.menu-name-price h4 {
+  color: #01bea5;
+  font-weight: lighter;
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+.menu-spoon {
+ width: 100px;
+ height: 40px;
+ /* border: 1px solid red;  */
+ float: right;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.menu-spoon-box-plus, 
+.menu-spoon-box-qty, .menu-spoon-box-minus {
+ width: 24px;
+ height: 24px;
+ /* border: 1px solid red; */
+ padding: 2px;
+ box-shadow: 0px 0px 6px -4px rgba(0,0,0,1);
+ border-radius: 50px;
+ cursor: pointer;
+}
+
+.menu-spoon-box-qty p {
+  font-weight: bolder;
+  color: #fb1f4c;
+  margin: 0px;
+  margin-top: 3px;
+  margin-left: 8px;
+}
+
+.qty {
+  margin: 0;
+  /* margin-top: 10px; */
+  padding: 0;
+  font-size: 17px;
+  margin: auto;
+  text-align: center;
+  color: #fb1f4c;
+}
+
+.menu-spoon-box-qty h6 {
+  margin-top: 1.5px;
+}
+
+.menu-spoon-box-plus, 
+.menu-spoon-box-plus-qty, .menu-spoon-box-minus img {
+ margin-left: 5px;
+}
+
+.menu-spoon-box-minus:nth-child(3) img {
+ margin-left: 5px;
+ margin-top: 5px;
+}
+
+.menu-spoon-box-plus img {
+  margin-left: 5px;
+  margin-top: -20px;
+}
+
+.menu-food-meta button {
+  width: 100%;
+  height: 40px;
+  background-color: #f2f2f2;
+  /* border-radius: 10px; */
+  border: none;
+  box-shadow: 0.5px 0.5px 1px #ddd9d9,
+              -0.5px -0.5px 1px #ddd9d9;
+  margin-top: 5px;
+  /* margin-left: 5px; */
+  color: #fb1f4c;
+  box-shadow:  2px 2px 10px #ddd9d9, 
+              /* inset -1px -1px 10px #ffa5a6; */
+}
+
+.menu-food-meta button:hover {
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  border: none;
+  box-shadow: inset 2px 2px 3px #b10303,
+              inset -2px -2px 3px #b10303;
+  color: #f2f2f2;
+  background-color: #fb1f4c;
+  cursor: pointer;
+}
+
