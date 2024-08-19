@@ -120,8 +120,10 @@ a {
 
 .app-auth {
     /* border: 1px solid red; */
-    margin: 12px auto;
+    /* width: 100%; */
+    margin: 12px;
     display: flex;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -137,6 +139,7 @@ a {
     display: flex;
     /* justify-content: space-around; */
     align-items: center;
+    margin: 0px 6px;
 }
 
 
@@ -176,7 +179,7 @@ a {
     }
 
     .pry-nav {
-        width: 100%;
+        width: 70%;
         /* width: 600px; */
         height: fit-content;
         display: flex;
@@ -184,11 +187,14 @@ a {
         background-color: rgba(255, 255, 255, 0);
         position: static;
         opacity: 1;
+        /* border: 1px solid red; */
     }
 
     .pry-nav ul {
+       width: 50%;
        flex-direction: row;
        align-items: center; 
+       /* border: 1px solid red; */
        
     }
 
