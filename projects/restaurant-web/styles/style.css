@@ -780,7 +780,7 @@ li {
 .copyright {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     height: 100px;
     flex-direction: column;
     padding-bottom: 60px;
