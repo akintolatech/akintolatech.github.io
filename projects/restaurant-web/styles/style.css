@@ -68,6 +68,8 @@ a {
     cursor: pointer;
 }
 
+
+/* Primary navigation */
 .pry-nav {
     width: 100vh;
     height: 100vh;
@@ -116,6 +118,45 @@ a {
     background-color: rgba(194, 255, 255, 0.433);
 }
 
+.app-auth {
+    /* border: 1px solid red; */
+    margin: 12px auto;
+    display: flex;
+    align-items: center;
+}
+
+.app-auth button {
+    /* width: 100px; */
+    width: fit-content;
+    height: 40px;
+    padding: 0px;
+    padding: 12px;
+    /* border: 1px solid red; */
+    display: block;
+    box-sizing: border-box;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+
+
+.app-auth button p {
+    font-size: 17px;
+    font-weight: 200;
+    margin: 0px 2px;
+}
+
+/* for large screens: Progressive enhancements */
+@media screen and (min-width: 760px){
+
+    .app-auth {
+        display: flex;
+    }
+
+}
+
+/* Backdrop */
 .back-drop {
     position: fixed;
     background: rgba(0, 0, 0, 0.4);
@@ -135,7 +176,7 @@ a {
     }
 
     .pry-nav {
-        width: 50%;
+        width: 100%;
         /* width: 600px; */
         height: fit-content;
         display: flex;
