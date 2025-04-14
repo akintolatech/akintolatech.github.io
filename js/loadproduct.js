@@ -16,6 +16,7 @@ let productLink2 = "dhjcjdhcjhdjh";
 let products = {
     1 : [productImageLink, productText, productDesc, productPrice, productLink ],
     2 : [productImageLink2, productText2, productDesc2, productPrice2, productLink2 ],
+    3 : [productImageLink2, productText2, productDesc2, productPrice2, productLink2 ],
 }
 
 

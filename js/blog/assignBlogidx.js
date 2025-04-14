@@ -2,7 +2,6 @@
 // associated element using local storage
 
 function assignBlogIdx (id) {
-    window.localStorage.clear();
     window.sessionStorage.clear();
     window.sessionStorage.setItem("blog_id", id);
     // alert("commited");

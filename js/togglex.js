@@ -29,7 +29,7 @@ function toggleanimate() {
     backdrop.style.display = "none";
   }
 
-  console.log("function activated");
+  //console.log("function activated");
   
 
 //   console.log("hi");

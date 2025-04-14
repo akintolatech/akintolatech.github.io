@@ -10,6 +10,4 @@ function assignId (id) {
 }
 
 
-
-
 // console.log(window.localStorage.getItem("id"));

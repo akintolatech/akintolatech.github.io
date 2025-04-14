@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akintola Technologies</title>
-    <meta name="author" content="Akintola Victor">
+    <meta name="author" content="Akintola Technologies">
     <link type="text/css" href="styles/styles.css" rel="stylesheet" >
     <link type="x-icon" href="img/lotus.ico" rel="icon" />
     <script src="js/jquery.js"></script>
     <script language="javascript" src="js/blog/assignBlogidx.js"></script>
+    <script language="javascript" src="js/projects/assignProjectItem.js"></script>
     
 </head>
 <body>
@@ -26,11 +27,15 @@
             <div class="pry-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <!-- <li><a href="pages/blog.html">About</a></li> -->
                     <li><a href="pages/shop.html">Shop</a></li>
                     <li><a href="pages/blog.html">Blog</a></li>
-                    
                 </ul>
+
+                
+            </div>
+
+            <div id="site-id">
+                <img src="img/lotuslogo-01.svg" alt="AkintolaTech Logo">
             </div>
 
             <script src="js/toggle.js"></script>
@@ -55,35 +60,30 @@
 
     </div>
 
-    <div class="padding"></div>
-
-    <div id="main">
+    <div class="spacer" style="height: 70px;"></div>
 
 
-        <div class="back-drop"></div>
+    <div class="back-drop"></div>
         
-        <!-- <div class="reel-container">
-            <video src="img/lnd.mp4" autoplay loop></video>
-        </div> -->
+    <!-- LANDING PAGE -->
+    <div class="landing">
 
-        <!-- LANDING PAGE -->
-        <div class="landing">
+        <center>
 
             <div class="landing-text">
-                <h1>Web and Mobile Apps For your Brand</h1>
+                <h1 style="font-size: 48px;">Web and Mobile Apps For your Brand</h1>
 
                 <p>We Create amazing web and mobile experiences for your Brand, Streamlining sales and scalability for your Business.</p>
                 <a href="tel:08162065896"><button style="width: 200px;">Call Now!</button></a>
 
             </div>
 
-            <div class="landing-art">
-                <!-- <img src="img/dashlnd.gif" alt="landing"> -->
-                <video src="img/2.mp4" autoplay loop></video>
-            </div>
+        </center>
 
-        </div>
+    </div>
 
+
+    <div id="main">
 
         <!-- OUR SERVICES -->
         <div class="section">
@@ -102,9 +102,11 @@
                 </div>
 
                 <h2>Research</h2>
-                <p>Ai & Machine Learning</p>
+                <p>Artificial Intelligence</p>
                 <p>Geospatial Informatics</p>
-                <p>Remote Sensing</p>
+                <p>Machine Learning</p>
+                
+                
                 
             </div>
 
@@ -138,40 +140,44 @@
 
         </div>
 
-        <!-- products -->
+        <!-- projects -->
         <div class="section">
 
             <h1>Projects</h1>
             <!-- <p>Connections</p> -->
 
+            <button class="section_btn"><a href="pages/project/projects.html">View All </a></button>
+
         </div>
 
         <div class="service-box">
 
-            <!-- product boxes -->
+            <!-- project boxes -->
 
+            <div class="bento-box">
 
+            </div>
         
-            <div class="service product" onclick="window.location.href='projects/aisha/index.html'">
+            <div class="service product" onclick="assignProjectIdx(1)">
                 <div class="product-img">
                     <img src="img/prod/pf.jpg" alt="design" />
                 </div>
                 <p>Web Portfolio</p>
             </div>
 
-            <div class="service product" onclick="window.location.href='projects/hda-website/index.html'">
+            <!-- <div class="service product" onclick="assignProjectIdx(2)">
                 <div class="product-img">
-                    <img src="img/hda.jpg" alt="design" />
+                    <img src="img/proj/test_engine_c.jpg" alt="design" />
                 </div>
-                <p>Heroes Dreams Alive</p>
+                <p>Test Engine</p>
             </div>
 
             <div class="service product" onclick="window.location.href='projects/AFMS/index.html'">
                 <div class="product-img">
                     <img src="img/afms.jpg" alt="design" />
                 </div>
-                <p>AFMS Website</p>
-            </div>
+                <p>Fabletech E-Commerce</p>
+            </div> -->
             
         </div>
 
@@ -181,8 +187,32 @@
             <!-- <p>Connections</p> -->
         </div>
 
+        <div class="bento-container">
+
+            <div class="bento tall">
+                <h2>Profile</h2>
+                <p>Customize your profile, upload avatar, and update your preferences.</p>
+              </div>
+              <div class="bento">
+                <h2>Dashboard</h2>
+                <p>View summary stats and insights in a clean, concise panel.</p>
+              </div>
+
+              <div class="bento">
+                <h2>Tasks</h2>
+                <p>Organize and manage your to-do lists seamlessly.</p>
+              </div>
+              <div class="bento wide">
+                <h2>Tasks</h2>
+                <p>Organize and manage your to-do lists seamlessly.</p>
+              </div>
+
+        </div>
+
+
+
         <!-- LANDING PAGE -->
-        <div class="landing">
+        <!-- <div class="landing">
 
             <div class="landing-text">
                 <h1>We Create Amazing Experiences for your Brand</h1>
@@ -192,17 +222,18 @@
             </div>
 
             <div class="landing-art">
-                <!-- <img src="img/soln.gif" alt="lotus navigation"> -->
+             
                 <video src="img/ex.mp4" autoplay loop></video>
             </div>
 
-        </div>
+        </div> -->
         
+        <!-- Products -->
         <div class="section">
 
             <h1>Products</h1>
             <!-- <p>Connections</p> -->
-
+            <button class="section_btn"><a href="pages/project/projects.html">View All </a></button>
         </div>
 
         <div class="service-box">
@@ -282,7 +313,6 @@
 
     </div>
 
-
     <!-- footer -->
     <div class="foot-header">
 
@@ -291,12 +321,11 @@
         </div>
         <p>Designed and Developed by Akintola Technologies | All rights reserved &copy <b class="year">202 </b> </p>
             
-     </div>
+    </div>
 
 </body>
 
 <script language="javascript" src="js/year.js"></script>
 
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="akintolate6" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 </html>
