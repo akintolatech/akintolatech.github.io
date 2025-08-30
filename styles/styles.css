@@ -334,7 +334,7 @@ button:hover {
 .service-box {
     /* width: 90%; */
     /* height: 300px; */
-    border: 1px solid rebeccapurple;
+    /* border: 1px solid rebeccapurple; */
     margin: auto;
     display: flex;
     justify-content: space-around;
