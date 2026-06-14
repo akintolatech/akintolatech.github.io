@@ -67,11 +67,18 @@ button{
 
 <script>
 for(let i=1;i<=100;i++){
+    if (i<=41){
     document.write(`
         <div class="page">
             <img src="page${i}.png">
         </div>
-    `);
+    `);}
+    else{
+        document.write(`
+        <div class="page">
+            <img src="page${i}.jpg">
+        </div>
+    `);}
 }
 </script>
 
